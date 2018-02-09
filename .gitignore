@@ -1,0 +1,5 @@
+/kvm-constants-gen
+/kvm-constants-gen.c
+/kvm-constants-*.json
+/kvm-constants/
+/kvm/

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -ex
+
+arch=$1
+sha1=$2
+
+git add -f kvm-constants
+
+tree=$(git write-tree --prefix=kvm-constants)
+commit=$(git commit-tree -m "Generated kvm constants for $arch-$sha1" "$tree")
+
+git rm -fr --cached kvm-constants
+
+git tag -f "$arch-$sha1" "$commit"
