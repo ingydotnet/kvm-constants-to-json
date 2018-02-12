@@ -4,6 +4,9 @@ kvm-constants-to-json
 This repo will generate a JSON file of constants from
 https://git.kernel.org/pub/scm/virt/kvm/kvm.git/tree/include/uapi/linux/kvm.h
 
+Example output:
+https://github.com/ingydotnet/kvm-constants-to-json/blob/example/kvm-constants.json
+
 # Synopsis
 ```
 make build
